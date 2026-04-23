@@ -82,3 +82,5 @@ traffic_trend = df_clean.withColumn(
 
 traffic_trend.show()
 
+# 9. Save Output
+site_daily.write .mode("overwrite") .parquet("/analytics/telecom/site_kpi_summary")
